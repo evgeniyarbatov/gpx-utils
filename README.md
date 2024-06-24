@@ -23,3 +23,11 @@ python get-segment.py \
 ~/Downloads/SG200Miles2024.gpx \
 ./output/segment.gpx
 ```
+
+Convert KML to GPX:
+
+```
+python kml2gpx.py \
+~/gitRepo/run-with-ben/data/Smash\ 80km.kml \
+~/gitRepo/run-with-ben/data/Smash\ 80km.gpx
+```
