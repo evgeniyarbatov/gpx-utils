@@ -15,13 +15,14 @@ pip install -r requirements.txt
 Extract segment from GPX route given start and end coordinates:
 
 ```
+source ~/.venv/gpx-utils/bin/activate &&
 python get-segment.py \
 1.309743979078668 \
 103.89449080743935 \
 1.2850818043059817 \
 103.86170047918944 \
-~/Downloads/SG200Miles2024.gpx \
-./output/segment.gpx
+~/Downloads/SG200MilesUltra2023.gpx \
+~/Downloads/route.gpx
 ```
 
 Convert KML to GPX:
