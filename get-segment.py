@@ -62,8 +62,8 @@ def main(args):
   gpx_file = open(input_file, 'r')
   gpx = gpxpy.parse(gpx_file)
 
-  # gpx = reverse_gpx(gpx)
-  # print("GPX is reversed")
+  gpx = reverse_gpx(gpx)
+  print("GPX is reversed")
 
   start_lat, start_lng = find_closest_point(gpx, start_lat, start_lng)
   print(f"Start: ({start_lat}, {start_lng})")
