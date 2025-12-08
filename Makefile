@@ -11,8 +11,6 @@ install: venv
 	@$(PIP) install --disable-pip-version-check -q --upgrade pip
 	@$(PIP) install --disable-pip-version-check -q -r $(REQUIREMENTS)
 
-
 all: venv install
-
 
 	pip install --disable-pip-version-check -q -r requirements.txt
