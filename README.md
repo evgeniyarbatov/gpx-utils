@@ -21,8 +21,8 @@ python get-segment.py \
 103.89449080743935 \
 1.2850818043059817 \
 103.86170047918944 \
-~/Downloads/SG200Miles2024.gpx \
-~/Downloads/route.gpx
+~/Downloads/osm-upload922913898605219712.gpx \
+~/Downloads/osmtracker.gpx
 ```
 
 Convert KML to GPX:
