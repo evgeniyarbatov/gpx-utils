@@ -1,11 +1,18 @@
-PROJECT_NAME = gpx-utils
-VENV_PATH = ~/.venv/$(PROJECT_NAME)
+VENV_PATH := .venv
 
-all: venv install
+PYTHON := $(VENV_PATH)/bin/python
+PIP := $(VENV_PATH)/bin/pip
+REQUIREMENTS := requirements.txt
 
 venv:
 	@python3 -m venv $(VENV_PATH)
 
 install: venv
-	@source $(VENV_PATH)/bin/activate && \
+	@$(PIP) install --disable-pip-version-check -q --upgrade pip
+	@$(PIP) install --disable-pip-version-check -q -r $(REQUIREMENTS)
+
+
+all: venv install
+
+
 	pip install --disable-pip-version-check -q -r requirements.txt
