@@ -14,3 +14,6 @@ install: venv
 all: venv install
 
 	pip install --disable-pip-version-check -q -r requirements.txt
+
+cleanvenv:
+	@rm -rf .venv
